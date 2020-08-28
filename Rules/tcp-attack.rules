@@ -1,2 +1,0 @@
-#tcp syn flooding
-alert tcp any any -> $HOME_NET any (msg: "TCP SYN Flooding attack"; flags: S; threshold:type threshold, track by_src, count 20, seconds 5; sid:100001;)
